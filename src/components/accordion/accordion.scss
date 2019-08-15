@@ -1,0 +1,18 @@
+accordion {
+
+  .card-header {
+    background-color: map-get($colors, rgb(243, 243, 233));
+    color: #fff;
+    padding: 5px;
+    word-wrap: break-word;
+  }
+
+  ion-label {
+    font-size: 0.9em;
+  }
+
+  .card-content {
+    padding: 0px 16px;
+    max-height: 0px;
+  }
+}

@@ -14,3 +14,45 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+.cust-modal {
+  @media (min-height: 500px) {
+    ion-backdrop {
+      visibility: visible;
+    }
+  }
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  contain: strict;
+
+  .modal-wrapper {
+
+    &,
+    .ion-page,
+    .ion-page .content,
+    .ion-page .content .scroll-content {
+      contain: content;
+      position: relative;
+      padding: 1px;
+
+      position: relative;
+      top: auto;
+      left: auto;
+
+    }
+   
+    height:300px;
+    @media screen and (max-width: 768px) {
+      max-width: 320px;
+    }
+
+    background-color: $alert-md-background-color;
+    //box-shadow: 0 16px 20px $alert-md-box-shadow-color;
+    box-shadow: none;
+    border-radius: 4px;
+  }
+}
